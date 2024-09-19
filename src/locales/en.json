@@ -1,0 +1,29 @@
+{
+  "auth": {
+    "accessDenied": "Access denied",
+    "accessDeniedNoToken": "Access denied. No token provided.",
+    "invalidCredentials": "Invalid credentials",
+    "invalidRefreshToken": "Invalid refresh token",
+    "invalidToken": "Invalid token",
+    "loggedOut": "Logged out successfully",
+    "noTokenProvided": "No token provided",
+    "onlyAdminAction": "Only admins can perform this action",
+    "onlyAdminCanRegister": "Only admins can register new users",
+    "tokenExpired": "Token has expired",
+    "userDeletedSuccessfully": "User deleted successfully",
+    "userNotFound": "User not found",
+    "userUpdatedSuccessfully": "User updated successfully"
+  },
+  "common": {
+    "unexpectedError": "An unexpected error occurred"
+  },
+  "user": {
+    "deletedSuccessfully": "User deleted successfully",
+    "notFound": "User not found",
+    "updatedSuccessfully": "User updated successfully",
+    "viewAllUsers": "Only admins can view all users"
+  },
+  "validation": {
+    "invalidRequest": "The request contains invalid fields"
+  }
+}

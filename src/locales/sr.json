@@ -1,0 +1,29 @@
+{
+  "auth": {
+    "accessDenied": "Pristup odbijen",
+    "accessDeniedNoToken": "Pristup odbijen. Token nije dostavljen.",
+    "invalidCredentials": "Nevažeći podaci za prijavu",
+    "invalidRefreshToken": "Nevažeći token za osvežavanje",
+    "invalidToken": "Nevažeći token",
+    "loggedOut": "Uspešno ste se odjavili",
+    "noTokenProvided": "Nije obezbeđen token",
+    "onlyAdminAction": "Samo administratori mogu izvršiti ovu akciju",
+    "onlyAdminCanRegister": "Samo administratori mogu registrovati nove korisnike",
+    "tokenExpired": "Token je istekao",
+    "userDeletedSuccessfully": "Korisnik je uspešno obrisan",
+    "userNotFound": "Korisnik nije pronađen",
+    "userUpdatedSuccessfully": "Korisnik je uspešno ažuriran"
+  },
+  "common": {
+    "unexpectedError": "Došlo je do neočekivane greške"
+  },
+  "user": {
+    "deletedSuccessfully": "Korisnik je uspešno obrisan",
+    "notFound": "Korisnik nije pronađen",
+    "updatedSuccessfully": "Korisnik je uspešno ažuriran",
+    "viewAllUsers": "Samo administratori mogu pregledati sve korisnike"
+  },
+  "validation": {
+    "invalidRequest": "Zahtev sadrži nevažeća polja"
+  }
+}
