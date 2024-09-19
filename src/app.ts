@@ -1,6 +1,6 @@
 import express, { Application } from "express";
-import i18next from './i18n';
-import i18nextMiddleware from 'i18next-http-middleware'
+import i18next from "./i18n";
+import i18nextMiddleware from "i18next-http-middleware";
 import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
@@ -10,10 +10,13 @@ import generalRoutes from "./routes/index";
 import { errorHandler } from "./middleware/errorHandler";
 import { jwtAuth } from "./middleware/JWTAuthentication";
 
-dotenv.config();
+const env = process.env.NODE_ENV || "development";
+dotenv.config({ path: `.env.${env}` });
 
 const app: Application = express();
 const PORT = process.env.PORT || 3000;
+
+console.log(`Running in ${env} mode`);
 
 mongoose
   .connect(process.env.MONGO_URI!)
@@ -27,7 +30,7 @@ app.use(bodyParser.json());
 app.use(i18nextMiddleware.handle(i18next));
 
 app.use("/api/auth", authRoutes);
-app.use("/api/users", jwtAuth, userRoutes)
+app.use("/api/users", jwtAuth, userRoutes);
 app.use("/api", generalRoutes);
 
 app.use(errorHandler);
